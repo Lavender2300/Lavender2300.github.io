@@ -45,7 +45,30 @@
      margin:6px 0;
      transition: 0.4s;
     }
-    .bottom{
+    .carousel-item img { 
+      object-fit: cover;
+      object-position: center;
+      height: 50vh;
+      overflow: hidden;
+      padding-top: 10px;
+     }
+     .carousel-item:before{
+       content:"" ;
+       background-image: 
+        linear-gradient(
+          to bottom,
+          transparent, rgba(0,0,0,0.5)
+        );
+       display: block;
+       position: absolute;
+       top: 0px;
+       width: 100vw;
+       height: 100vh;
+     }
+     .carousel-caption{
+       color: #adb5bd;
+     }
+     .bottom{
       background-color: #4E5F68;
       margin: 5px;
       clear: both;
@@ -53,7 +76,22 @@
     .insta{
       width:4vw;
       height:4vw;
-      float:inline-end
+      float:inline-end;
+    }
+    .facebook{
+      width:4vw;
+      height:4vw;
+      float:inline-end;
+    }
+    .twitter{
+      width:4vw;
+      height:4vw;
+      float:inline-end;
+    }
+    .tiktok{
+      width:4vw;
+      height:4vw;
+      float:inline-end;
     }
     .text{
       font-style: italic ;
@@ -105,12 +143,59 @@
           </ul>
         </div>
       </nav>
+      <div id="carouselControls" class="carousel slide align-self-center " data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="IMG/madhu-shesharam-HRA_VAi9_Nc-unsplash.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block fst-italic"> 
+              <h1>Hello there!</h1>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="IMG/jason-blackeye-GPPAjJicemU-unsplash.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block fst-italic "> 
+              <h1>Hello there!</h1>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="IMG/38502.jpeg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block fst-italic "> 
+              <h1>Hello there!</h1>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <section class="container"> 
+        <div class=" m-lg-4 text-secondary fs-3 fst-italic">
+          <p>~I'm Willow Raine~ <br>
+
+           I was born and raised in the Sierra Mountain Range. Since I was a little girl I've always wanted to help others. Growing up, I have seen so many people look for ways to relax and get a break from the stresses in their lives. I found massage therapy to be a really good way to help those relax in a holistic and therapeutic way. Living in a mountain community has influenced me in focusing on bringing my clients a safe space in a natural and relaxed environment. 
+          I am also a 2021 graduate of The National Holistic Institute, A College of Massage Therapy. 
+           If you'd like more information on my approach to massage therapy, please contact me.
+          
+            I look forward to hearing from you!</p>
+        </div>
+      </section>
       <footer class="bottom">
         <a href="https://www.amtamassage.org/">
             <img src="IMG/amtaimg.png">
             <a href="https://www.instagram.com/">
             <img class= "insta" src="IMG/instagram-brands.svg">
-            <p class="text">Willow Raine Therapeutic<br>
+            <img class="facebook" src="IMG/facebook-f-brands.svg">
+            <a href="https://www.facebook.com/"></a>
+            <img class="twitter" src="IMG/twitter-brands.svg">
+            <a href="https://twitter.com/?lang=en"></a>
+            <img class="tiktok" src="IMG/tiktok-brands.svg">
+            <a href="https://www.tiktok.com/en/"></a>
+            <p class="text ">Willow Raine Therapeutic<br>
                 41930 Tollhouse Rd<br>
                 Shaver Lake, CA 93664 </p> 
         </footer>
