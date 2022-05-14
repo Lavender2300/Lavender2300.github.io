@@ -11,109 +11,181 @@
     <title>Willow Raine Therapeutics</title>
   </head>
   <style>
-   .navbar{
-     background-color: #4E5F68;
-     position: sticky;
+    .navbar{
+      background-color: #4E5F68;
+      position: sticky;
+      }
+     .navbar-toggler{
+      background-color: #E9875C;
+      color:#69787D ;
      }
-    .navbar-toggler{
-     background-color: #E9875C;
-     color:#69787D ;
-    }
-    .nav-link{
-     color:#E9875C;
+     .nav-link{
+      color:#E9875C;
+      }
+     a:hover {
+      color: #9E5438;
+     } 
+     
+     .navbar-brand{
+      color: #252012;
+      font-size: larger;
      }
-    a:hover {
-     color: #9E5438;
-    } 
-    
-    .navbar-brand{
-     color: #252012;
-     font-size: larger;
+     a:hover {
+      color: #070803;
+     }  
+     .navbar-toggler-icon {
+      display: block;
+      cursor: pointer;
+     }
+   
+     .bar1, .bar2, .bar3 {
+      width: 35px;
+      height: 5px;
+      background-color: #69787D;
+      margin:6px 0;
+      transition: 0.4s;
+     }
+     .top{
+       background-color: #FDB694;
+       color: #4E5F68;
+     }
+    .middle{
+      background-color: #E9875C;
+      color: #4E5F68;
     }
-    a:hover {
-     color: #070803;
-    }  
-    .navbar-toggler-icon {
-     display: block;
-     cursor: pointer;
-    }
-  
-    .bar1, .bar2, .bar3 {
-     width: 35px;
-     height: 5px;
-     background-color: #69787D;
-     margin:6px 0;
-     transition: 0.4s;
+    .below{
+      background-color: #E35F46;
+      color: #4E5F68;
     }
     .bottom{
-      background-color: #4E5F68;
-      margin: 5px;
-      clear: both;
-    }
-    .insta{
-      width:4vw;
-      height:4vw;
-      float:inline-end
-    }
-    .text{
-      font-style: italic ;
-      font-size: 10px;
-      display: inline-block;
-      justify-content: center;
-      color: #E9875C;
-    }
-    </style>
-    <body>
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid col align-self-start">
-          <a class="navbar-brand" href="#">Willow Raine Therapeutics</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon" onclick="myFunction(this)">
-              <div class="bar1"></div>
-              <div class="bar2"></div>
-              <div class="bar3"></div>
-            </div>
-            </span>
-          </button>
-        </div>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="http://127.0.0.1:5500/index.html" target="http://127.0.0.1:5500/index.html">Home</a>
-            </li>
-          </ul>
-        </div>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="http://127.0.0.1:5500/about.html" target="http://127.0.0.1:5500/about.html">About</a>
-            </li>
-          </ul>
-        </div>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="http://127.0.0.1:5500/services.html" target="http://127.0.0.1:5500/services.html">Servives, Rates, and Hours</a>
-            </li>
-          </ul>
-        </div>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="http://127.0.0.1:5500/appt.html" target="http://127.0.0.1:5500/appt.html">Book an Appointment</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <footer class="bottom">
-        <a href="https://www.amtamassage.org/">
-            <img src="IMG/amtaimg.png">
-            <a href="https://www.instagram.com/">
-            <img class= "insta" src="IMG/instagram-brands.svg">
-            <p class="text">Willow Raine Therapeutic<br>
-                41930 Tollhouse Rd<br>
-                Shaver Lake, CA 93664 </p> 
-        </footer>
+       background-color: #4E5F68;
+       margin: 5px;
+       clear: both;
+     }
+     .insta{
+       width:4vw;
+       height:4vw;
+       float:inline-end;
+     }
+     .facebook{
+       width:4vw;
+       height:4vw;
+       float:inline-end;
+     }
+     .twitter{
+       width:4vw;
+       height:4vw;
+       float:inline-end;
+     }
+     .tiktok{
+       width:4vw;
+       height:4vw;
+       float:inline-end;
+     }
+     .text{
+       font-style: italic ;
+       font-size: 10px;
+       display: inline-block;
+       justify-content: center;
+       color: #E9875C;
+     }
+     </style>
+     <body>
+       <nav class="navbar navbar-expand-lg">
+         <div class="container-fluid col align-self-start">
+           <a class="navbar-brand" href="#">Willow Raine Therapeutics</a>
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon" onclick="myFunction(this)">
+               <div class="bar1"></div>
+               <div class="bar2"></div>
+               <div class="bar3"></div>
+             </div>
+             </span>
+           </button>
+         </div>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <ul class="navbar-nav">
+             <li class="nav-item">
+               <a class="nav-link active" aria-current="page" href="http://127.0.0.1:5500/index.html" target="http://127.0.0.1:5500/index.html">Home</a>
+             </li>
+           </ul>
+         </div>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <ul class="navbar-nav ">
+             <li class="nav-item">
+               <a class="nav-link active" aria-current="page" href="http://127.0.0.1:5500/about.html" target="http://127.0.0.1:5500/about.html">About</a>
+             </li>
+           </ul>
+         </div>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <ul class="navbar-nav">
+             <li class="nav-item">
+               <a class="nav-link active" aria-current="page" href="http://127.0.0.1:5500/services.html" target="http://127.0.0.1:5500/services.html">Servives, Rates, and Hours</a>
+             </li>
+           </ul>
+         </div>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <ul class="navbar-nav ">
+             <li class="nav-item">
+               <a class="nav-link active" aria-current="page" href="http://127.0.0.1:5500/appt.html" target="http://127.0.0.1:5500/appt.html">Book an Appointment</a>
+             </li>
+           </ul>
+         </div>
+       </nav>
+       <div class="container my-4 top ">
+         <h5>Swedish Massage <br></h5>
+            <p> 60 minutes: $70 | 30 minutes: $50<br>
+             Swedish Massage is a very relaxing and therapeutic style of bodywork. It combines oils or lotion with an array of strokes such as rolling, kneading, and percussion to help the body improve its circulation. The benefits of this type of bodywork are wide-ranging and include relief from aches and pains, decreased stress levels in the body, enhanced mental clarity, and greater flexibility.
+             
+             I have both scented and uncented massage oils. I only have an uncented lothion avalible at this time <br>
+             <br>
+             Scented Oils: <br>
+             <br>
+             "Lovely Lavender"<br>
+             <br>
+             "Norwegian Wood"<br>
+             <br>
+             "Citris Breeze"</p>
+       </div>
+       <div class="container my-4 middle ">
+         <h5>Shiatsu<br></h5>
+           <p>60 minutes: $80 | 30 minutes: $60<br>
+           Shiatsu is a Japanese form of massage therapy. The word Shiatsu comes from two Japanese words - "shi" (finger) and "atsu" (pressure). In addition to the direct stimulation of pressure points along the energy pathways of your body, gentle stretching techniques are applied over a wider area of the body to integrate the point work and encourage the flow of Chi (energy) throughout the body. Shiatsu is a type of work that is done on a matt and the client is fully clothed. 
+           </p>
+       </div>
+       <div class="container my-4 below ">
+         <h5>Aromatherapy<br></h5>
+           <p> use a diffuser to fill the room with an aroma of your choice. You can mix up to 3 essential oils. Aromatherapy can go with any modality of your choice for an added $5.<br>
+           <br>
+           ~Oils~<br>
+           <br>
+           Sweet Orange <br>
+           <br>
+           Lemon<br>
+           <br>
+           Grapefruit <br>
+           <br>
+           Rose<br>
+           <br>
+           Lavender<br>
+           <br>
+           Peppermint </p>
+       </div>  
+       <footer class="bottom">
+         <a href="https://www.amtamassage.org/">
+             <img src="IMG/amtaimg.png">
+             <a href="https://www.instagram.com/">
+             <img class= "insta" src="IMG/instagram-brands.svg">
+             <img class="facebook" src="IMG/facebook-f-brands.svg">
+             <a href="https://www.facebook.com/"></a>
+             <img class="twitter" src="IMG/twitter-brands.svg">
+             <a href="https://twitter.com/?lang=en"></a>
+             <img class="tiktok" src="IMG/tiktok-brands.svg">
+             <a href="https://www.tiktok.com/en/"></a>
+             <p class="text ">Willow Raine Therapeutic<br>
+                 41930 Tollhouse Rd<br>
+                 Shaver Lake, CA 93664 </p> 
+         </footer>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
